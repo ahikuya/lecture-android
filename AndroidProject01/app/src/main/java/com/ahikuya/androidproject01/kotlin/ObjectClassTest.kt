@@ -1,9 +1,18 @@
 package com.ahikuya.androidproject01.kotlin
 
-val objClass = object {
+
+open class Parent(){
+    var parentName: String = "parentName"
+
+    open fun printMyName(){
+
+    }
+}
+
+val objClass = object: Parent() {
     var myName = "01"
 
-    fun printMyName(){
+    override fun printMyName(){
         println("내 이름은 ${myName}")
     }
 
@@ -13,6 +22,6 @@ val objClass = object {
 }
 
 fun main() {
-    objClass.printMyName()      // 에러
+    objClass.printMyName()
 }
 
