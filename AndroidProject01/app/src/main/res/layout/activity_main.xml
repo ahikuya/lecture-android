@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:theme="@style/Theme.AndroidProject01.AppBarOverlay">
 
+        <!-- 상단 툴바 -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -20,6 +21,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!--  콘텐트 레이아웃 포함  -->
     <include layout="@layout/content_main" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
