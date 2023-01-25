@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- manifest : root 태그 -->
+<!--xmlns : XML의 네임스페이스 -->
+<!-- "http://schemas.android.com/apk/res/android" : 안드로이드 표준 네임스페이스 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ahikuya.androidproject01">
 
+    <!-- 앱의 설정 -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,14 +17,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProject01"
         tools:targetApi="31">
+
+        <!-- 액티비티 설정 -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AndroidProject01.NoActionBar">
             <intent-filter>
+                <!-- 앱 아이콘 클릭시 실행되는 액티비티로 설정 -->
+                <!-- 이 인텐트필터가 없으면 앱 아이콘이 나오지 않고 사용자가 실행할 수 없음. -->
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
