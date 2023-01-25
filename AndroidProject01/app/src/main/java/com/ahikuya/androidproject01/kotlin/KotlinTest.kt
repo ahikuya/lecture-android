@@ -1,4 +1,5 @@
 package com.ahikuya.androidproject01.kotlin
 
-class KotlinTest {
+fun main() {
+    println("Hello Kotlin")
 }
