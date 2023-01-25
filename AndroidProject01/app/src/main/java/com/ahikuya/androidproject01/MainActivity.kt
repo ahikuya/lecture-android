@@ -11,6 +11,12 @@ import android.view.Menu
 import android.view.MenuItem
 import com.ahikuya.androidproject01.databinding.ActivityMainBinding
 
+
+/**
+ * AppCompatActivity 클래스를 상속 받음.
+ * AppCompatActivity 는 Activity를 상속 받음.
+ * Ref : https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity
+ */
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
